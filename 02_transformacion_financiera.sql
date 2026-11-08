@@ -49,7 +49,7 @@ modelo_financiero AS (
         p.motivo_consulta,
 
         -- Clasificación en las dos líneas estratégicas del negocio
-        CASE 
+        CASE
             WHEN UPPER(p.descripcion_tratamiento) LIKE '%THERAPY%' 
               OR UPPER(p.descripcion_tratamiento) LIKE '%INJECTION%'
               OR UPPER(p.descripcion_tratamiento) LIKE '%MAGNETIC RESONANCE%'
